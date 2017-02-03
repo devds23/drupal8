@@ -1,0 +1,22 @@
+#add adyax test entities:
+#  title: 'Create new Adyax test entities'
+#
+#administer adyax test entities:
+#  title: 'Administer Adyax test entities'
+#  description: 'Allow to access the administration form to configure Adyax test entities.'
+#  restrict access: true
+#
+#delete adyax test entities:
+#  title: 'Delete Adyax test entities'
+#
+#edit adyax test entities:
+#  title: 'Edit Adyax test entities'
+#
+#access adyax test overview:
+#  title: 'Access the Adyax test overview page'
+#
+#view published adyax test entities:
+#  title: 'View published Adyax test entities'
+#
+#view unpublished adyax test entities:
+#  title: 'View unpublished Adyax test entities'

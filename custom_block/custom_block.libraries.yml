@@ -1,0 +1,10 @@
+color-countdown:
+  version: 1.x
+  js:
+    js/color-countdown.js: {}
+    js/jquery.countdown.js: {}
+  dependencies:
+      - core/jquery
+      - core/drupalSettings
+      - core/drupal
+      - core/jquery.once

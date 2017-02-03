@@ -1,0 +1,18 @@
+
+# Custom entity menu items definition
+entity.custom_entity.collection:
+  title: 'Custom entity list'
+  route_name: entity.custom_entity.collection
+  description: 'List Custom entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Custom entity type menu items definition
+entity.custom_entity_type.collection:
+  title: 'Custom entity type'
+  route_name: entity.custom_entity_type.collection
+  description: 'List Custom entity type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,8 @@
+custom_config.admin_settings:
+  path: '/admin/config/mysettings'
+  defaults:
+    _title: 'Custom config form'
+    _form: '\Drupal\custom_config\Form\ConfigFormCustomConfigForm'
+  requirements:
+    _permission: 'administer site configuration'
+

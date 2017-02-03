@@ -1,0 +1,58 @@
+<?php
+/**
+ * @file
+ *
+ */
+
+function other_entity_install() {
+  $entities_array = [
+    [
+      'type' => 'bundle',
+      'name' => 'Some name1',
+      'prefered_brand' => 'Dynamo',
+      'products_owned_count' => 4,
+      'created' => time(),
+  ],
+  [
+      'type' => 'bundle',
+      'name' => 'Some name2',
+      'prefered_brand' => 'Metalist',
+      'products_owned_count' => 8,
+      'created' => time(),
+    ]
+
+  ];
+  \Drupal::service('entity_type.manager')->getStorage('custom_entity')->onBundleCreate('bundle', 'custom_entity');
+//  $entities_array = [
+//    'name' => 'Some name1',
+//    'prefered_brand' => 'BMW',
+//    'products_owned_count' => 4,
+//  ];
+  foreach ($entities_array as $instance) {
+    \Drupal::service('entity_type.manager')->getStorage('custom_entity')->create($instance)->save();
+  }
+}
+
+//function other_entity_update_8003() {
+//  \Drupal::entityTypeManager()->clearCachedDefinitions();
+//  \Drupal::service('entity.definition_update_manager')->applyUpdates();
+//}
+//
+//function other_entity_update_8004() {
+//  $now = time();
+//  $check = $now - (60 * 60 * 24 * 10);
+//
+//  $ids = \Drupal::service('entity.query')
+//    ->get('custom_entity')
+//    ->condition("created", $check, '<')
+//    ->execute();
+//  $custom_entities = \Drupal::service('entity_type.manager')
+//    ->getStorage('custom_entity')
+//    ->loadMultiple($ids);
+//
+//  foreach ($custom_entities as $key => $value) {
+//    $value->created = $now;
+//    $value->save();
+//  }
+//}
+//

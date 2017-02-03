@@ -1,0 +1,6 @@
+name: custom_config
+type: module
+description: Custom configuration module
+core: 8.x
+package: Custom
+configure: custom_config.admin_settings

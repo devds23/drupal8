@@ -1,0 +1,5 @@
+services:
+  custom_widget.custom_widget_default:
+    class: Drupal\custom_widget\CustomDecorateEntityManager
+    decorates: entity_type.manager
+    arguments: ['@entity_type.manager', '@container.namespaces', '@cache.discovery', '@module_handler', '@entity.manager']

@@ -1,0 +1,22 @@
+add custom entity entities:
+  title: 'Create new Custom entity entities'
+
+administer custom entity entities:
+  title: 'Administer Custom entity entities'
+  description: 'Allow to access the administration form to configure Custom entity entities.'
+  restrict access: true
+
+delete custom entity entities:
+  title: 'Delete Custom entity entities'
+
+edit custom entity entities:
+  title: 'Edit Custom entity entities'
+
+access custom entity overview:
+  title: 'Access the Custom entity overview page'
+
+view published custom entity entities:
+  title: 'View published Custom entity entities'
+
+view unpublished custom entity entities:
+  title: 'View unpublished Custom entity entities'

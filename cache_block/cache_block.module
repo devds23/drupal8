@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cache_block.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cache_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cache_block module.
+    case 'help.page.cache_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Cache system in Drupal 8') . '</p>';
+      return $output;
+
+    default:
+  }
+}

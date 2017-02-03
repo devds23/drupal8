@@ -1,0 +1,58 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+entity.adyax_test.canonical:
+  path: '/adyax_test/{adyax_test}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'adyax_test'
+    _title: 'Adyax test Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'adyax_test.view'
+
+entity.adyax_test.collection:
+  path: '/adyax_test/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'adyax_test'
+    _title: 'Adyax test List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view contact entity'
+
+content_entity_example.contact_add:
+  path: '/adyax_test/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: adyax_test.add
+    _title: 'Add Adyax Test'
+  requirements:
+    _entity_create_access: 'adyax_test'
+
+entity.adyax_test.edit_form:
+  path: '/adyax_test/{adyax_test}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: adyax_test.edit
+    _title: 'Edit Adyax Test'
+  requirements:
+    _entity_access: 'adyax_test.edit'
+
+entity.adyax_test.delete_form:
+  path: '/contact/{adyax_test}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: adyax_test.delete
+    _title: 'Delete Adyax Test'
+  requirements:
+    _entity_access: 'adyax_test.delete'
+
+content_entity_example.contact_settings:
+  path: 'admin/structure/adyax_test_settings'
+  defaults:
+    _form: '\Drupal\adyax_test\Form\ContactSettingsForm'
+    _title: 'Adyax Test Settings'
+  requirements:
+    _permission: 'administer contact entity'

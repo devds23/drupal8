@@ -1,0 +1,16 @@
+custom_routing.recent_node_controller:
+  path: '/adyax/{type}'
+  defaults:
+    _controller: '\Drupal\custom_routing\Controller\RecentNodeController::recentNode'
+    _title: 'Recent Nodes'
+  requirements:
+    _permission: 'access content'
+custom_routing.form:
+  path: '/custom-form'
+  defaults:
+    _title: 'Custom form'
+    _form: '\Drupal\custom_routing\Form\NewPath'
+  requirements:
+    _permission: 'access content'
+route_callbacks:
+  - '\Drupal\custom_routing\Routing\DynamicPath::routes'

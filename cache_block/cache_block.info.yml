@@ -1,0 +1,5 @@
+name: cache_block
+type: module
+description: Cache system in Drupal 8
+core: 8.x
+package: Custom

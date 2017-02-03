@@ -1,0 +1,6 @@
+entity.adyax_test.add_form:
+  route_name: entity.adyax_test.add_form
+  title: 'Add Adyax test'
+  appears_on:
+    - entity.adyax_test.collection
+    - entity.adyax_test.canonical

@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains adyax_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function adyax_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the adyax_test module.
+    case 'help.page.adyax_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Entity type module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function adyax_test_theme() {
+  return [
+    'adyax_test' => [
+      'template' => 'adyax_test',
+      'render element' => 'children',
+    ],
+  ];
+}

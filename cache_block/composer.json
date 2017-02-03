@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cache_block",
+  "type": "drupal-module",
+  "description": "Cache system in Drupal 8",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cache_block",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cache_block",
+    "source": "http://cgit.drupalcode.org/cache_block"
+  },
+  "require": { }
+}

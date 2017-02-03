@@ -1,0 +1,14 @@
+{
+  "name": "drupal/custom_routing",
+  "type": "drupal-module",
+  "description": "This is a custom module for routing system",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/custom_routing",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/custom_routing",
+    "source": "http://cgit.drupalcode.org/custom_routing"
+  },
+  "require": { }
+}

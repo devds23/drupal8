@@ -1,0 +1,14 @@
+{
+  "name": "drupal/mytest",
+  "type": "drupal-module",
+  "description": "My first drupal testing",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/mytest",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/mytest",
+    "source": "http://cgit.drupalcode.org/mytest"
+  },
+  "require": { }
+}

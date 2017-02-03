@@ -1,0 +1,5 @@
+name: custom_routing
+type: module
+description: This is a custom module for routing system
+core: 8.x
+package: Custom

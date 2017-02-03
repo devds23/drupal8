@@ -1,0 +1,14 @@
+
+# Adyax test menu items definition
+entity.adyax_test.collection:
+  title: 'Adyax test list'
+  route_name: entity.adyax_test.collection
+  description: 'List Adyax test entities'
+  parent: system.admin_structure
+  weight: 100
+
+adyax_test.admin.structure.settings:
+  title: Adyax test settings
+  description: 'Configure Adyax test entities'
+  route_name: adyax_test.settings
+  parent: system.admin_structure

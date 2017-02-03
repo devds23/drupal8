@@ -1,0 +1,14 @@
+{
+  "name": "drupal/adyax_test",
+  "type": "drupal-module",
+  "description": "Custom Entity type module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/adyax_test",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/adyax_test",
+    "source": "http://cgit.drupalcode.org/adyax_test"
+  },
+  "require": { }
+}

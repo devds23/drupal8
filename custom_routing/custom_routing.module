@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_routing.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_routing_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_routing module.
+    case 'help.page.custom_routing':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is a custom module for routing system') . '</p>';
+      return $output;
+
+    default:
+  }
+}
